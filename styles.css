@@ -1,0 +1,73 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.addNote {
+  padding: 25px;
+  background-color: aqua;
+  color: blue;
+}
+
+.high,
+.medium,
+.low {
+  padding: 15px;
+}
+
+.high {
+  background-color: rgb(255, 152, 152);
+}
+
+.medium {
+  background-color: rgb(255, 255, 152);
+}
+
+.low {
+  background-color: rgb(0, 255, 152);
+}
+
+.statusNote > *:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.note--high {
+  background-color: red;
+  margin-bottom: 20px;
+}
+
+.note--medium {
+  background-color: yellow;
+  margin-bottom: 20px;
+}
+
+.note--low {
+  background-color: lime;
+  margin-bottom: 20px;
+}
+
+.addNote__form--btn {
+  margin-top: 15px;
+}
+
+.message__container {
+  position: absolute;
+  top: 7%;
+  left: 70%;
+  background-color: coral;
+}
+
+.changeNote,
+.deleteNote {
+  position: absolute;
+  top: 30%;
+}
+
+.changeNote {
+  right: 70%;
+}
+
+.deleteNote {
+  right: 60%;
+}

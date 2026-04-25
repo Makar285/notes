@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notes</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+  <div class="addNote">
+    <form class="addNote__form">
+      <label for="title">Название: </label>
+      <input type="text" placeholder="Введите название заметки" id="title" class="addNote__form--title">
+      <br>
+      <br>
+      <label for="content">Содержание: </label>
+      <textarea placeholder="Введите описание заметки" id="content" class="addNote__form--content"></textarea>
+      <br>
+      <button class="addNote__form--btn">Добавить заметку</button>
+      <div class="message__container">Здравствуйте</div>
+    </form>
+  </div>
+
+  <div class="statusNote">
+    <div class="noteContainer high">
+      <h2>🔴 Заметки высокой важности (высокий приоритет)</h2>
+      <div class="highContainerNote"></div>
+    </div>
+
+    <div class="noteContainer medium">
+      <h2>🟡 Заметки средней важности (средний приоритет)</h2>
+      <div class="mediumContainerNote"></div>
+    </div>
+
+    <div class="noteContainer low">
+      <h2>🟢 Заметки низкой важности (низкий приоритет)</h2>
+      <div class="lowContainerNote"></div>
+    </div>
+  </div>
+
+  <script src="../dist/bundle.js"></script>
+</body>
+
+</html>
